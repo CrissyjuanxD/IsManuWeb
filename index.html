@@ -114,12 +114,20 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 <script>
     const audio = document.getElementById("myAudio");
+    let isPlaying = false;
 
     audio.volume = 0.5;
 
-    function playAudio() {
-        // Reproducir el audio al hacer clic en "#MANUCUM"
-        audio.play();
+    function toggleAudio() {
+        if (isPlaying) {
+            // Pausar el audio si está reproduciéndose
+            audio.pause();
+        } else {
+            // Reproducir el audio si no está reproduciéndose
+            audio.play();
+        }
+        // Cambiar el estado de reproducción
+        isPlaying = !isPlaying;
     }
 </script>
 </html>
