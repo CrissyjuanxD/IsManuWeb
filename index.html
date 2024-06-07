@@ -34,7 +34,7 @@
                 <img src="img/manufoto.png" alt="IsManuPlay/Manuelin">
                 <span class="username">MANUELIN</span>
             </div>
-            <div class="custom-message2 manucora">
+            <div class="custom-message2 manucora" onclick="playAudio()">
                 <span class="username">#MANUCUM</span>
                 <img src="img/manucora.png">
             </div>
@@ -115,10 +115,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <script>
     const audio = document.getElementById("myAudio");
 
-    // Establecer el volumen al 50% (0.5)
-    audio.volume = 0.5;
-
-    // Reproducir automáticamente
-    audio.play();
+    function playAudio() {
+        // Reproducir el audio al hacer clic en "#MANUCUM"
+        audio.play();
+    }
 </script>
 </html>
