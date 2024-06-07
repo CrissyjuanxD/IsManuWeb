@@ -23,7 +23,3 @@ var swiper = new Swiper(".slide-content", {
   },
 });
 
-function showOriginalImage(button) {
-  const imageUrl = button.getAttribute('data-image-url');
-  window.open(imageUrl, '_blank');
-}
