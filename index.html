@@ -103,18 +103,11 @@ document.addEventListener('DOMContentLoaded', function() {
           // Oculta el emote y el fondo oscuro
           loader.style.display = 'none';
           pageMask.style.display = 'none';
-        }, 4000); // 4000 milisegundos = 4 segundos
+        }, 3000); // 4000 milisegundos = 4 segundos
       }
 
       // Asigna la función al botón
-      document.getElementById('mod-felicitaciones').addEventListener('click', function() {
-        reiniciarCiclo();
-        // Redirige a la siguiente página
-        window.location.href = 'felicitaciones.html';
-      });
-
-      // Llama a la función al cargar la página inicialmente
-      reiniciarCiclo();
+      document.getElementById('mod-felicitaciones').addEventListener('click', reiniciarCiclo);
     });
 </script>
 </html>
