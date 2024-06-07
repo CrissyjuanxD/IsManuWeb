@@ -23,6 +23,10 @@
         <source src="dualipa.mp3" type="audio/mpeg">
         Tu navegador no admite el elemento de audio.
     </audio>
+    <div id="page-mask" style="display: none;"></div>
+    <div class="loader">
+        <img src="/img/manuclown.png" alt="Cargando..." class="emote">
+      </div>
     <div class="main-container">
         <nav class="navbar">
             <div class="profile-picture custom-message">
@@ -68,8 +72,28 @@
     </div>
 </body>
 <script>
-    document.getElementById('mod-felicitaciones').addEventListener('click', function() {
-      window.location.href = 'felicitaciones.html';
+    // En la nueva página:
+document.addEventListener('DOMContentLoaded', function() {
+  const loader = document.querySelector('.loader');
+  const image = loader.querySelector('img');
+  // Cambia la imagen según la página actual
+  image.src = '/img/manuclown.png'; // Cambia a la imagen deseada
+});
+
+    </script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.getElementById('mod-felicitaciones').addEventListener('click', function() {
+        // Muestra el elemento de carga
+        document.querySelector('#page-mask').style.display = 'block';
+        document.querySelector('.loader').style.display = 'block';
+
+        // Espera 4 segundos antes de redirigir
+        setTimeout(function() {
+          // Redirige a la siguiente página
+          window.location.href = 'felicitaciones.html';
+        }, 3000); // 4000 milisegundos = 4 segundos
+      });
     });
-  </script>
+</script>
 </html>
