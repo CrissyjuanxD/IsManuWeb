@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Espera 4 segundos antes de redirigir
         setTimeout(function() {
-            emote.style.animationPlayState = 'paused';
+            document.querySelector('.loader img').style.animationPlayState = 'paused';
           // Redirige a la siguiente página
           window.location.href = 'felicitaciones.html';
         }, 3000); // 4000 milisegundos = 4 segundos
