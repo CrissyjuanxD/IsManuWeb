@@ -83,18 +83,34 @@ document.addEventListener('DOMContentLoaded', function() {
     </script>
 <script>
     document.addEventListener('DOMContentLoaded', function() {
-      document.getElementById('mod-felicitaciones').addEventListener('click', function() {
-        // Muestra el elemento de carga
-        document.querySelector('#page-mask').style.display = 'block';
-        document.querySelector('.loader').style.display = 'block';
+      const loader = document.querySelector('.loader');
+      const pageMask = document.querySelector('#page-mask');
 
-        // Espera 4 segundos antes de redirigir
+      // Función para reiniciar el ciclo
+      function reiniciarCiclo() {
+        // Muestra el elemento de carga (fondo oscuro)
+        pageMask.style.display = 'block';
+        loader.style.display = 'block';
+
+        // Inicia la animación del emote
+        loader.querySelector('img').style.animationPlayState = 'running';
+
+        // Espera 4 segundos antes de ocultar todo
         setTimeout(function() {
-            document.querySelector('.loader img').style.animationPlayState = 'paused';
-          // Redirige a la siguiente página
-          window.location.href = 'felicitaciones.html';
+          // Detiene la animación del emote
+          loader.querySelector('img').style.animationPlayState = 'paused';
+
+          // Oculta el emote y el fondo oscuro
+          loader.style.display = 'none';
+          pageMask.style.display = 'none';
         }, 3000); // 4000 milisegundos = 4 segundos
-      });
+      }
+
+      // Asigna la función al botón
+      document.getElementById('mod-felicitaciones').addEventListener('click', reiniciarCiclo);
+
+      // Llama a la función al cargar la página inicialmente
+      reiniciarCiclo();
     });
 </script>
 </html>
