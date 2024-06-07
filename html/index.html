@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Feliz Cumpleaños Manuel</title>
+    <style>
+        /* Estilo para la imagen */
+        .imagen-agrandable {
+          transition: transform 0.3s; /* Agrega una transición suave */
+        }
+    
+        /* Al pasar el cursor sobre la imagen, agrándala */
+        .imagen-agrandable:hover {
+          transform: scale(1.3); /* Ajusta el valor según lo que desees */
+        }
+      </style>
+    
+</head>
+<body>
+    <audio autoplay loop>
+        <source src="/imr/dualipa.mp3" type="audio/mpeg">
+        Tu navegador no admite el elemento de audio.
+    </audio>
+    <div class="main-container">
+        <nav class="navbar">
+            <div class="profile-picture custom-message">
+                <img src="/img/manufoto.png" alt="IsManuPlay/Manuelin">
+                <span class="username">MANUELIN</span>
+            </div>
+            <div class="custom-message2 manucora">
+                <span class="username">#MANUCUM</span>
+                <img src="/img/manucora.png">
+            </div>
+            <div class="social-icons">
+                <a href="https://www.twitch.tv/ismanuplay" target="_blank"><img class="imagen-agrandable" src="/img/icons8-twitch-30.png" alt="Twitch"></a>
+                <a href="https://x.com/IsManuPlay" target="_blank"><img class="imagen-agrandable" src="/img/icons8-x-30.png" alt="X"></a>
+                <a href="https://www.instagram.com/ismanuplay/?hl=es-la" target="_blank"><img class="imagen-agrandable" src="/img/icons8-instagram-30.png" alt="Instagram"></a>
+                <a href="https://www.tiktok.com/@ismanuplay?lang=es" target="_blank"><img class="imagen-agrandable" src="/img/icons8-tiktok-30.png" alt="TikTok"></a>
+                <a href="https://youtube.com/@ismanuplay?si=zvignGwYGCPsRc2P" target="_blank"><img class="imagen-agrandable" src="/img/icons8-youtube-30.png" alt="YouTube"></a>
+                <a href="https://discord.com/invite/8VpfVTF" target="_blank"><img class="imagen-agrandable" src="/img/icons8-discord-30.png" alt="Discord"></a>
+            </div>
+            <div class="confetti"></div>
+        </nav>
+        <div class="background-image">
+        <header class="main-header">
+            <div class="sticker top-left">
+                <img src="/img/manubaile.gif" alt="Sticker 1">
+            </div>
+            <div class="sticker top-right">
+                <img src="/img/RainbowPlsManu.gif" alt="Sticker 1">
+            </div>
+            <h1>Feliz Cumpleaños Manuel!!</h1>
+            <p>Los Moderadores te tenemos mucho aprecio, por eso, te hemos hecho esta pagina donde encontraras unas palabras de cada uno de los mods, espero te guste <br><br> Tambien gracias a todos los Modsitos que dieron su tiempo para los mensajitos <33 </p>
+            <button id="mod-felicitaciones" class="btn">Felicitaciones de los Mods</button>
+            <div class="sticker bottom-left">
+                <img src="/img/shinemanu.gif" alt="Sticker 1">
+            </div>
+            <div class="sticker bottom-right">
+                <img src="/img/shinemanu.gif" alt="Sticker 1">
+            </div>
+        </header>
+        </div>
+        <footer class="footer">
+            <p>© 2024 Hecho por CrissyjuanxD</p>
+        </footer>
+    </div>
+</body>
+<script>
+    document.getElementById('mod-felicitaciones').addEventListener('click', function() {
+      window.location.href = 'felicitaciones.html';
+    });
+  </script>
+</html>
