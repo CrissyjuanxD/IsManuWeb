@@ -48,7 +48,6 @@ body {
 
 .background-image {
     /* Ajusta el tamaño y la imagen de fondo según tus necesidades */
-    background-image: url("banner.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
