@@ -52,7 +52,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: calc(100vh - 130px); /* Resta la altura del navbar */
+    height: calc(100vh - 100px); /* Resta la altura del navbar */
     opacity: 0.89; /* Ajusta la transparencia */
 }
 
