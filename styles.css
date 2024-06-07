@@ -58,7 +58,7 @@ body {
 
 .background-image2 {
     /* Ajusta el tamaño y la imagen de fondo según tus necesidades */
-    background-image: url("img/modspagina.jpeg");
+    background-image: url("modspagina.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -69,7 +69,7 @@ body {
 
 
 .background-cardimg{
-    background-image: url("img/starfall-gif-8.gif");
+    background-image: url("starfall-gif-8.gif");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;

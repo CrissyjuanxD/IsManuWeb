@@ -50,7 +50,7 @@ body {
 
 .background-image2 {
     /* Ajusta el tamaño y la imagen de fondo según tus necesidades */
-    background-image: url("img/modspagina.jpeg");
+    background-image: url("modspagina.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

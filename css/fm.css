@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 .background-cardimg{
-  background-image: url("img/starfall-gif-8.gif");
+  background-image: url("starfall-gif-8.gif");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
