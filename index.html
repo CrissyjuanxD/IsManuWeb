@@ -20,7 +20,7 @@
     
 </head>
 <body>
-    <audio autoplay loop>
+    <audio id="myAudio">
         <source src="dualipa.mp3" type="audio/mpeg">
         Tu navegador no admite el elemento de audio.
     </audio>
@@ -111,5 +111,14 @@ document.addEventListener('DOMContentLoaded', function() {
       // Asigna la función al botón
       document.getElementById('mod-felicitaciones').addEventListener('click', reiniciarCiclo);
     });
+</script>
+<script>
+    const audio = document.getElementById("myAudio");
+
+    // Establecer el volumen al 50% (0.5)
+    audio.volume = 0.5;
+
+    // Reproducir automáticamente
+    audio.play();
 </script>
 </html>
