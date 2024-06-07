@@ -53,7 +53,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     height: calc(100vh - 130px); /* Resta la altura del navbar */
-    opacity: 1; /* Ajusta la transparencia */
+    opacity: 0.89; /* Ajusta la transparencia */
 }
 
 .background-image2 {
