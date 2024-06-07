@@ -21,6 +21,10 @@
       </style>
 </head>
 <body>
+    <audio id="myAudio">
+        <source src="manunightdancer.mp3" type="audio/mpeg">
+        Tu navegador no admite el elemento de audio.
+    </audio>
     <div class="main-container" style="max-width: 100%; height: auto;">
         <nav class="navbar" style="max-width: 100%; height: auto;">
             <div class="profile-picture custom-message">
@@ -544,5 +548,23 @@
   const imageUrl = button.getAttribute('data-image-url');
   window.open(imageUrl, '_blank');
 }
+</script>
+<script>
+    const audio = document.getElementById("myAudio");
+    let isPlaying = false;
+
+    audio.volume = 0.4;
+
+    function toggleAudio() {
+        if (isPlaying) {
+            // Pausar el audio si está reproduciéndose
+            audio.pause();
+        } else {
+            // Reproducir el audio si no está reproduciéndose
+            audio.play();
+        }
+        // Cambiar el estado de reproducción
+        isPlaying = !isPlaying;
+    }
 </script>
 </html>
