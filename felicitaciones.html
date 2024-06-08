@@ -200,8 +200,9 @@
                         </div>
                         <div class="card-content">
                             <h2 class="name">Rompope05</h2>
-                            <p class="description">Feliz cumpleaños Manu, espero que la passes muy bien en tu día, que la pases genial.<br> Aún recuerdo cuándo tenías que ir a un oxxo a pagar subs o bits. Feliz día, con amor (no mucho) Rompope <3 <br><br>
-                                01101110 01100001 01110110 01100001 01110011 00100000 00111110 00100000 01101111 01100011 01101000 01101111 01100001</p>
+                            <p class="description">Feliz cumpleaños Manu, espero que la pases muy bien en tu día, que la pases genial.<br> Aún recuerdo cuándo tenías que ir a un oxxo a pagar subs o bits. Feliz día, con amor (no mucho) Rompope <3 <br><br>
+                                <span id="binary-code" onclick="copyToClipboard()">01101110 01100001 01110110 01100001 01110011 00100000 00111110 00100000 01101111 01100011 01101000 01101111 01100001</span>
+                            </p>
                             <div class="imgra imgra2">
                                 <img src="imr/imgaaron.png" alt="Imagen5" id="original-image">
                                 <br>
@@ -565,6 +566,14 @@
         }
         // Cambiar el estado de reproducción
         isPlaying = !isPlaying;
+    }
+</script>
+<script>
+    function copyToClipboard() {
+        const binaryCode = document.getElementById("binary-code").textContent;
+        navigator.clipboard.writeText(binaryCode)
+            .then(() => alert("¡Código binario copiado al portapapeles!"))
+            .catch(error => console.error("Error al copiar: ", error));
     }
 </script>
 </html>
