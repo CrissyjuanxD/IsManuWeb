@@ -1,1 +1,1 @@
-Se que esta todo mal estructurado este codigo, lo hize en un dia, pero bueno, es un codigo muy basico, solo usa las Tecnologias HTML, Css y JavaScrypt, pueden ver su funcionamiento aqui -> https://crissyjuanxd.github.io/IsManuWeb/ 
+Se que esta todo mal estructurado este codigo, lo hize en un dia, pero bueno, es un codigo muy basico, solo usa las Tecnologias HTML, Css y JavaScript, pueden ver su funcionamiento aqui -> https://crissyjuanxd.github.io/IsManuWeb/ 
